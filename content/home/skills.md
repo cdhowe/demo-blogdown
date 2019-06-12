@@ -18,18 +18,31 @@ subtitle = ""
   icon = "r-project"
   icon_pack = "fab"
   name = "R"
-  description = "90%"
+  description = "70%"
   
 [[feature]]
-  icon = "chart-line"
+  icon = "music"
   icon_pack = "fas"
-  name = "Statistics"
-  description = "100%"  
+  name = "Classical Singer"
+  description = "15%"  
   
 [[feature]]
-  icon = "camera-retro"
+  icon = "solar-panel"
   icon_pack = "fas"
-  name = "Photography"
-  description = "10%"
+  name = "Solar Energy Geek"
+  description = "10%"  
+
+[[feature]]
+  icon = "plane"
+  icon_pack = "fas"
+  name = "Pilot"
+  description = "5%"
+  
+ [[feature]]
+  icon = "cat"
+  icon_pack = "fas"
+  name = "Cat Servant"
+  description = "100%"
+
 
 +++

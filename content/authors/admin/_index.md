@@ -35,4 +35,4 @@ user_groups:
 - Visitors
 ---
 
-Carl is the Director of Education at RStudio. R has been Carl's go-to platform for market research data science since 2002, and he spent much of the 2010s teaching companies around the world how to analyze big data using Hadoop. Carl moved to Cambridge to study computer science at MIT in a prior millennium and still resides in the Boston suburbs with his wife and two grown sons. He is also an enthusiastic classical singer, cat servant-cats don't have owners, they have staff—and aviation geek.
+Carl is the Director of Education at RStudio. R has been Carl's go-to platform for market research data science since 2002, and he spent much of the 2010s teaching companies around the world how to analyze big data using Hadoop. Carl moved to Cambridge to study computer science at MIT in a prior millennium and still resides in the Boston suburbs with his wife and two grown sons.
