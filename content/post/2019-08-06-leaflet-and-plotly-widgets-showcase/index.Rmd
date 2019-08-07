@@ -1,0 +1,77 @@
+---
+title: Leaflet and Plotly Widgets Showcase
+author: Carl Howe
+date: '2019-08-06'
+slug: Leaflet and Plotly demo
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2019-08-06T10:50:03-04:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+output: 
+  flexdashboard::flex_dashboard:
+    storyboard: true
+    social: menu
+    source: embed
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+```
+
+### Leaflet is a JavaScript library for creating dynamic maps that support panning and zooming along with various annotations.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(tibble)
+library(leaflet)
+locations <- tibble(lng = c(-71.038169, -71.071856),
+                    lat = c(42.3488172, 42.349110),
+                    label = c("RStudio HQ", "Liberty Mutual"))
+leaflet() %>%
+  addTiles() %>%
+  addMarkers(lng=locations$lng, lat=locations$lat, popup=locations$label) 
+```
+
+***
+
+https://rstudio.github.io/leaflet/
+
+- Interactive panning/zooming
+
+- Compose maps using arbitrary combinations of map tiles, markers, polygons, lines, popups, and GeoJSON.
+
+- Create maps right from the R console or RStudio
+
+- Embed maps in knitr/R Markdown documents and Shiny apps
+
+- Easily render Spatial objects from the sp package, or data frames with latitude/longitude columns
+
+- Use map bounds and mouse events to drive Shiny logic
+
+
+
+
+### Plotly provides bindings to the plotly.js library and allows you to easily translate your ggplot2 graphics into an interactive web-based version.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(plotly)
+p <- ggplot(data = diamonds, aes(x = cut, fill = clarity)) +
+            geom_bar(position = "stack")
+ggplotly(p)
+```
+
+***
+
+https://plot.ly/ggplot2/
+
+If you use ggplot2, `ggplotly()` converts your plots to an interactive, web-based version! It also provides sensible tooltips, which assists decoding of values encoded as visual properties in the plot.
+
+plotly supports some chart types that ggplot2 doesn't (such as 3D surface, point, and line plots). You can create these (or any other plotly) charts using `plot_ly()`.
+
